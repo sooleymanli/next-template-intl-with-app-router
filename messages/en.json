@@ -72,5 +72,25 @@
   "ButtonsValue": {
     "apply": "Apply"
   },
-  "FAQ": "FAQ"
+  "FAQ": "FAQ",
+  "Common": {
+    "more_details": "More details",
+    "day": "Day",
+    "night": "Night",
+    "who_we_are": "Who we are?",
+    "clients_count":"Clients count",
+    "tours_count":"Tours count",
+    "countries_count":"Countries count",
+    "countries":"Countries",
+    "all":"All",
+    "popular_tours":"Popular tours",
+    "to_where":"To where?",
+    "country":"Country",
+    "date_range":"Date range",
+    "begin_date":"Start date",
+    "end_date":"End date",
+    "search":"Search",
+    "favorite_routes":"Favorite routes"
+   
+  }
 }

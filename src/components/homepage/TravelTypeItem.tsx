@@ -17,7 +17,7 @@ export default function TravelTypeItem({ title, path }: Props) {
         <div className="w-[225px] h-[378px] overflow-hidden rounded-[8px] relative">
           <Image
             fill
-            src="/traveltype.png"
+            src="/travelType.png"
             alt={title}
             className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
           />

@@ -1,4 +1,4 @@
-import { Locale, useTranslations } from 'next-intl';
+import { Locale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
 
@@ -7,7 +7,7 @@ export async function generateMetadata(
 ) {
   const { locale } = await props.params;
 
-  const t: any = await getTranslations({
+  const t = await getTranslations({
     locale: locale as Locale,
     namespace: 'PageTitles'
   });
@@ -25,7 +25,6 @@ export default function AboutPage({
   // Enable static rendering
   setRequestLocale(locale as Locale);
 
-  const t = useTranslations('PathnamesPage');
 
   return (
     <div className='text-center'>

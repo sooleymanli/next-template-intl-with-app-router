@@ -72,5 +72,25 @@
   "ButtonsValue": {
     "apply": "Müraciət et"
   },
-  "FAQ":"Ən çox verilən suallar"
+  "FAQ": "Ən çox verilən suallar",
+  "Common": {
+    "more_details": "Ətraflı",
+    "day": "Gün",
+    "night": "Gecə",
+    "who_we_are": "Biz kimik?",
+    "clients_count":"Müştəri sayımız",
+    "tours_count":"Tur sayımız",
+    "countries_count":"Ölkə sayımız",
+    "countries":"Ölkələr",
+    "all":"Hamısı",
+    "popular_tours":"Populyar turlar",
+    "to_where":"Haraya?",
+    "country":"Ölkə",
+    "date_range":"Tarix aralığı",
+    "begin_date":"Başlanğıc tarixi",
+    "end_date":"Son tarixi",
+    "search":"Axtar",
+    "favorite_routes":"Sevimli istiqamətlər"
+    
+  }
 }

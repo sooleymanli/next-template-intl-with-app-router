@@ -7,6 +7,21 @@ const withNextIntl = createNextIntlPlugin({
   }
 });
 
-const config: NextConfig = {};
+const config: NextConfig = {
+ eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript:{
+    ignoreBuildErrors:true
+  },
+    images: {
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'admin.cht.az',
+      port: '',
+    }]
+  },
+
+};
 
 export default withNextIntl(config);

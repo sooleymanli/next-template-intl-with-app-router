@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
-import { Locale, hasLocale, NextIntlClientProvider } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import {  hasLocale, NextIntlClientProvider } from 'next-intl';
+import {  setRequestLocale } from 'next-intl/server';
 import { clsx } from 'clsx';
 import { Inter } from 'next/font/google';
 import { routing } from '@/i18n/routing';

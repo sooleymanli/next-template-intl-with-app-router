@@ -19,12 +19,9 @@ export default function Header() {
 
                 <Navigation />
 
-                <div className='flex items-center gap-3'>
+                <div className='hidden lg:flex items-center gap-3'>
                     <LocaleSwitcher />
-                    <Button type='primary' size='large' shape='circle' icon={<Phone />} style={{ background: "rgba(35,35,35,0.15)", color: "#000" }}
-                    >
-
-                    </Button>
+                    <Button type='primary' size='large' shape='circle' icon={<Phone />} style={{ background: "rgba(35,35,35,0.15)", color: "#000" }} />
                 </div>
 
                 <ToggleButton />

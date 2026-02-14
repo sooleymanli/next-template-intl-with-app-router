@@ -1,12 +1,12 @@
 'use client'
 import { Link } from '@/i18n/navigation'
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 
 type Props = {
     label: string,
-    path: '/tours'
+    path: string
 }
 
 // Açıq rənglər

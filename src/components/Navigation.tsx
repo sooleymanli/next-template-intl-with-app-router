@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import LocaleSwitcher from './LocaleSwitcher';
 import NavigationLink from './NavigationLink';
 
 export default function Navigation() {
@@ -13,7 +12,7 @@ export default function Navigation() {
           <NavigationLink href="/visa-services">{t('visa_services')}</NavigationLink>
           {/* <NavigationLink   href="/about">{t('about')}</NavigationLink> */}
           <NavigationLink href="/blogs">{t('blogs')}</NavigationLink>
-          <NavigationLink href="/contact">{t('contact')}</NavigationLink>
+          {/* <NavigationLink href="/contact">{t('contact')}</NavigationLink> */}
       </nav>
   );
 }

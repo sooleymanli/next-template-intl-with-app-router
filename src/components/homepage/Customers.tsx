@@ -19,7 +19,7 @@ export default function Customers() {
 
 
     return (
-        <section className="py-16 mt-12 mb-12  bg-[#FFF4F3] bg-[url(/customer_bg.png)] bg-no-repeat bg-[right_top]">
+        <section className="py-16 mt-12 mb-12  bg-[#FFF4F3] bg-[url(/customer_bg.png)] bg-no-repeat bg-[right_top]  ">
             <div className='container mx-auto px-4 flex flex-col gap-6 '>
 
 

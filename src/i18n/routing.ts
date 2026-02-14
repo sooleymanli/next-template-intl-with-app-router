@@ -9,6 +9,10 @@ export const routing = defineRouting({
       az: '/turlar',
       en: "/tours"
     },
+    '/tours/[slug]': {
+      az: '/turlar/[slug]',
+      en: '/tours/[slug]'
+    },
     '/excursions': {
       az: '/ekskursiyalar',
       en: "/excursions"
@@ -17,21 +21,21 @@ export const routing = defineRouting({
       az: "/visa-desteyi",
       en: "/visa-services"
     },
-    '/about':{
-      az:"/haqqimizda",
-      en:"/about"
+    '/about': {
+      az: "/haqqimizda",
+      en: "/about"
     },
-    '/blogs':{
-      az:"/bloqlar",
-      en:"/blogs"
+    '/blogs': {
+      az: "/bloqlar",
+      en: "/blogs"
     },
-    '/countries':{
-      az:"/olkeler",
-      en:"/countries"
+    '/countries': {
+      az: "/olkeler",
+      en: "/countries"
     },
-    '/contact':{
-      az:"/elaqe",
-      en:"/contact"
+    '/contact': {
+      az: "/elaqe",
+      en: "/contact"
     }
   }
 });

@@ -2,9 +2,8 @@ import { Button, Select } from 'antd'
 import { useTranslations } from 'next-intl'
 import React from 'react'
 
-type Props = {}
 
-export default function VisaApplication({ }: Props) {
+export default function VisaApplication() {
     const t = useTranslations()
 
 
@@ -21,7 +20,7 @@ export default function VisaApplication({ }: Props) {
 
             </div>
 
-            <div className='w-full grid grid-cols-3 gap-4'>
+            <div className='w-full grid grid-cols-1 lg:grid-cols-3 gap-4'>
 
 
                 <Select
@@ -83,7 +82,7 @@ export default function VisaApplication({ }: Props) {
             </div>
 
             <div className='w-full flex justify-end'>
-                <Button type='primary' color='red' size='large' className='!bg-[red]' >{t("ButtonsValue.apply")}</Button>
+                <Button type='primary' color='red' block size='large' className='!bg-[red]' >{t("ButtonsValue.apply")}</Button>
 
             </div>
 

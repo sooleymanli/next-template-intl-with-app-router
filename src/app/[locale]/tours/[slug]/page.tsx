@@ -7,7 +7,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
 
 export async function generateMetadata(
-  props: Omit<PageProps<'/[locale]/tours'>, 'children'>
+  props: Omit<PageProps<'/[locale]/tours/[slug]'>, 'children'>
 ) {
   const { locale } = await props.params;
 
@@ -21,10 +21,10 @@ export async function generateMetadata(
   };
 }
 
-export default function ToursPage({
+export default function TourDetailPage({
   params
-}: PageProps<'/[locale]/tours'>) {
-  const { locale } = use(params);
+}: PageProps<'/[locale]/tours/[slug]'>) {
+  const { locale,slug } = use(params);
 
   // Enable static rendering
   setRequestLocale(locale as Locale);
@@ -34,16 +34,13 @@ export default function ToursPage({
   return (
     <div className='text-center flex container mx-auto px-4 flex-col gap-6'>
       <Breadcrumb
-        paths={[t("Navigation.home"), t("Navigation.tours")]}
+        paths={[t("Navigation.home"), t("Navigation.tours"),slug]}
         links={["/", "/tours"]}
       />
 
-      <div className='filters flex flex-col lg:flex-row justify-start gap-4 lg:justify-between '>
-        <LeftFilters />
-        <RightFilters />
-      </div>
-
-      <Products />
+   
+        Detallar
+ 
 
     </div>
   );

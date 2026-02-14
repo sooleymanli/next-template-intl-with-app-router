@@ -3,9 +3,8 @@ import { Button } from 'antd'
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
 
-export default function CallMe({ }: Props) {
+export default function CallMe() {
     return (
 
         <section className=" w-full  mt-12 mb-12 flex flex-col justify-end items-center gap-6 h-[329px] ">
@@ -23,7 +22,7 @@ export default function CallMe({ }: Props) {
                     />
                     <div className='flex  flex-col justify-center items-center gap-6'>
             <span className='text-white text-xl '>Menecer ilə əlaqə saxla, arzuladığın SƏYAHƏTİ reallaşdır</span>
-            <Button style={{fontWeight:"bold",color:"red"}} icon={<WhatsAppOutlined style={{color:"green"}} />}  size='large' type='default'>Danışmağa başla</Button>
+            <Button style={{fontWeight:"bold",color:"red",background:"#fff !important"}} icon={<WhatsAppOutlined style={{color:"green"}} />}    size='large' >Danışmağa başla</Button>
 
                     </div>
  

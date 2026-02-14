@@ -1,11 +1,10 @@
 import React, {
-    ComponentPropsWithRef,
     useCallback,
     useEffect,
     useState
 } from 'react'
 import { EmblaCarouselType } from 'embla-carousel'
-import { Button } from 'antd'
+import { Button, type ButtonProps } from 'antd'
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 
 type UsePrevNextButtonsType = {
@@ -51,9 +50,8 @@ export const usePrevNextButtons = (
     }
 }
 
-type PropType = ComponentPropsWithRef<any>
 
-export const PrevButton: React.FC<PropType> = (props) => {
+export const PrevButton: React.FC<ButtonProps> = (props) => {
     const { children, ...restProps } = props
 
     return (
@@ -69,7 +67,7 @@ export const PrevButton: React.FC<PropType> = (props) => {
     )
 }
 
-export const NextButton: React.FC<PropType> = (props) => {
+export const NextButton: React.FC<ButtonProps> = (props) => {
     const { children, ...restProps } = props
 
     return (

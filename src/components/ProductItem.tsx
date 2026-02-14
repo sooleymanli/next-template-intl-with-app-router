@@ -1,32 +1,37 @@
 import { ArrowRightOutlined, CalendarOutlined } from '@ant-design/icons'
-import { ArrowLeftRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import {useTranslations} from 'next-intl';
 
 type Props = {
     productName: string,
     dateRange: string,
     dayAndNigts?: string
     price: string,
-    path: string
+    path: string,
+    featuredImage: string
 }
 
-export default function ProductItem({ productName, dateRange, dayAndNigts="", price, path }: Props) {
+export default function ProductItem({ productName, dateRange, dayAndNigts = "", price, path, featuredImage }: Props) {
+    const t = useTranslations('Common');
     return (
-        <Link href={path} className='group cursor-pointer flex flex-col rounded-[8px] border border-[#CFCFCF] shadow-[1px_1px_5px_1px_rgba(186,186,186,0.25)]'>
+        <Link href={path} className="group cursor-pointer flex flex-col h-full rounded-[8px] border border-[#CFCFCF] shadow-[1px_1px_5px_1px_rgba(186,186,186,0.25)]"
+        >
             <div className="w-full h-[260px] overflow-hidden rounded-t-[8px] relative">
                 <Image
                     fill
-                    src="/product.png"
-                    
+                    src={featuredImage}
                     alt={productName}
-                    className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                    className="w-full h-full  object-[center_0%] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                 />
             </div>
 
-            <div className='description p-4 flex flex-col items-start gap-4 border-b-1'>
-                <span className='font-bold text-lg'>{productName}</span>
+            <div className='description p-4 flex flex-col items-start gap-4 border-b-1 min-w-0'>
+                <span className="font-bold text-lg text-left w-full min-w-0 truncate">
+                    {productName}
+                </span>
+
 
 
 
@@ -44,10 +49,10 @@ export default function ProductItem({ productName, dateRange, dayAndNigts="", pr
             </div>
 
             <div className='footer w-full p-4 flex justify-between items-center'>
-                <span className='text-[red] font-bold text-xl'>$ {price}</span>
+                <span className='text-[red] font-bold text-xl'>{price} $</span>
                 <div className='flex items-center gap-2 ' >
                     <span className='text-[xs]'>
-                        Daha Ətraflı
+                        {t('more_details')}
                     </span>
 
                     <ArrowRightOutlined className='group-hover:translate-x-1 transition-all duration-300 ease-in-out' />

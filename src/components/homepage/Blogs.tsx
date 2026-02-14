@@ -5,9 +5,8 @@ import { NextButton, PrevButton, usePrevNextButtons } from '../slider/ArrowButto
 import BlogItem from './BlogItem'
 import Link from 'next/link'
 
-type Props = {}
 
-export default function Blogs({ }: Props) {
+export default function Blogs() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start' })
 
 

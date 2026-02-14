@@ -2,9 +2,8 @@ import { Select } from 'antd'
 import { useTranslations } from 'next-intl'
 import React from 'react'
 
-type Props = {}
 
-export default function RightFilters({ }: Props) {
+export default function RightFilters() {
     const t = useTranslations("FiltersPlaceholders")
     return (
         <Select

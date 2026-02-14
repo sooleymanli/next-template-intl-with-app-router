@@ -1,4 +1,4 @@
-import { Locale, useTranslations } from 'next-intl';
+import { Locale} from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
 
@@ -25,7 +25,6 @@ export default function ContactPage({
   // Enable static rendering
   setRequestLocale(locale as Locale);
 
-  const t = useTranslations('PathnamesPage');
 
   return (
     <div className='text-center'>

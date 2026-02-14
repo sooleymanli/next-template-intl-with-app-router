@@ -1,5 +1,4 @@
-import { ArrowRightOutlined, CalendarOutlined } from '@ant-design/icons'
-import { ArrowLeftRight } from 'lucide-react'
+import { ArrowRightOutlined } from '@ant-design/icons'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -36,9 +35,9 @@ export default function BlogItem({ description, blogName, path,date }: Props) {
             </div>
 
             <div className='footer w-full p-4 flex justify-between items-center'>
-                <span className='text-[red] font-bold text-xl'>$ {date}</span>
+                <span className='text-[12px]'>{date}</span>
                 <div className='flex items-center gap-2 ' >
-                    <span className='text-[xs]'>
+                    <span className='text-[12px]'>
                         Daha Ətraflı
                     </span>
 

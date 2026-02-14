@@ -1,3 +1,5 @@
+import Blogs from '@/components/blogs/Blogs';
+import Breadcrumb from '@/components/BreadCrumb';
 import { Locale, useTranslations } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
@@ -25,11 +27,16 @@ export default function BlogsPage({
   // Enable static rendering
   setRequestLocale(locale as Locale);
 
-  const t = useTranslations('PathnamesPage');
+  const t = useTranslations();
 
   return (
-    <div className='text-center'>
-      Xeberler
+    <div className='container mx-auto px-4 py-12 flex flex-col gap-6 '>
+      <Breadcrumb
+        paths={[t("Navigation.home"), t("Navigation.blogs")]}
+        links={["/", "/countries"]}
+      />
+
+      <Blogs />
     </div>
   );
 }

@@ -5,7 +5,6 @@ import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { NextButton, PrevButton, usePrevNextButtons } from '../slider/ArrowButtons'
 import Link from 'next/link'
-import CountryItem from './CountryItem'
 import TravelTypeItem from './TravelTypeItem'
 
 export default function TravelTypes() {

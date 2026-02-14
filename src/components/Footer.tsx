@@ -2,9 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-type Props = {}
 
-export default function Footer({ }: Props) {
+export default function Footer() {
     return (
         <footer className=' w-full bg-[#1F214F] pt-10 pb-5' style={{
             backgroundImage: `
